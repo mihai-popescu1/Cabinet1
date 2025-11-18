@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="ro">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Laura Radu – Spațiu Modern de Psihoterapie</title>
+    <meta
+      name="description"
+      content="Psihoterapie modernă în București cu psiholog clinician Laura Radu. Spațiu sigur pentru anxietate, burnout, relații și echilibru interior."
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Header comun -->
+    <header class="site-header">
+      <div class="container">
+        <nav class="navbar">
+          <a href="index.html" class="logo">
+            <div class="logo-mark">LR</div>
+            <div>
+              <span class="logo-text-main">Laura Radu</span>
+              <span class="logo-text-sub">Psihoterapeut & psiholog clinician</span>
+            </div>
+          </a>
+
+          <button class="nav-toggle" aria-label="Deschide meniul">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+
+          <ul class="nav-links">
+            <li><a href="despre.html">Despre</a></li>
+            <li><a href="servicii.html">Servicii</a></li>
+            <li><a href="resurse.html">Resurse</a></li>
+            <li><a href="contact.html" class="btn">Programează o ședință</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <!-- Hero -->
+    <main>
+      <section class="hero">
+        <div class="container hero-grid">
+          <div>
+            <div class="badge">
+              <span class="badge-dot"></span>
+              Programări disponibile online & la cabinet
+            </div>
+
+            <h1 class="hero-title">
+              <span>Spațiu modern de psihoterapie</span><br />
+              pentru minți ocupate și suflete obosite.
+            </h1>
+
+            <p class="hero-subtitle">
+              Bună, sunt <strong>Laura Radu</strong>, psihoterapeut. Lucrez cu adulți
+              care se confruntă cu anxietate, burnout, perfecționism și relații
+              complicate. Împreună construim un spațiu sigur, calm și autentic pentru
+              schimbare.
+            </p>
+
+            <div class="hero-actions">
+              <a href="contact.html" class="btn">Programează o sesiune</a>
+              <a href="despre.html" class="btn-outline">Află mai multe despre mine</a>
+            </div>
+
+            <div class="hero-meta">
+              <span><strong>+500</strong> ore de practică clinică</span>
+              <span><strong>Online & cabinet</strong> în București</span>
+              <span><strong>Focus:</strong> anxietate, burnout, relații, identitate</span>
+            </div>
+          </div>
+
+          <div class="hero-card">
+            <div class="hero-photo">
+              <!-- Poți înlocui cu o altă poză tip portret/licențiată legal -->
+              <img
+                src="https://images.pexels.com/photos/1181519/pexels-photo-1181519.jpeg"
+                alt="Psiholog în cabinet modern"
+              />
+              <div class="hero-card-tag">
+                Spațiu calm, contemporan, creat pentru dialog onest.
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Secțiune highlight servicii -->
+      <section class="section">
+        <div class="container">
+          <div class="section-header">
+            <p class="section-eyebrow">Cum te pot ajuta</p>
+            <h2 class="section-title">Psihoterapie adaptată ritmului tău de viață</h2>
+            <p class="section-description">
+              Uneori nu avem nevoie de „sfaturi”, ci de un spațiu în care să putem
+              respira, formula întrebările potrivite și construi sens din ceea ce ni se
+              întâmplă.
+            </p>
+          </div>
+
+          <div class="cards-grid">
+            <article class="card">
+              <div class="card-tag">Anxietate & supraîncărcare</div>
+              <h3 class="card-title">Când mintea nu se mai oprește</h3>
+              <p class="card-body">
+                Lucrăm cu gândurile intruzive, îngrijorările constante și presiunea de
+                „a nu greși”. Învățăm să facem loc echilibrului, nu perfecțiunii.
+              </p>
+            </article>
+
+            <article class="card">
+              <div class="card-tag">Burnout & muncă</div>
+              <h3 class="card-title">Când ai grijă de toți, mai puțin de tine</h3>
+              <p class="card-body">
+                Explorăm relația cu munca, limitele personale și așteptările
+                imposibile. Redesenăm un stil de viață în care tu ai din nou loc.
+              </p>
+            </article>
+
+            <article class="card">
+              <div class="card-tag">Relații & identitate</div>
+              <h3 class="card-title">Când nu mai știi cine ești în relații</h3>
+              <p class="card-body">
+                Vorbim despre atașament, limite sănătoase, despărțiri și dinamici
+                care se repetă. Reconstruim o relație mai blândă cu tine.
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer comun -->
+    <footer class="site-footer">
+      <div class="container footer-layout">
+        <div>© <span id="year"></span> Laura Radu – Cabinet de psihoterapie</div>
+        <div>
+          <a href="contact.html">Contact</a> ·
+          <a href="resurse.html">Resurse</a>
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
+    <!-- Script meniu mobil -->
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const toggle = document.querySelector(".nav-toggle");
+        const navLinks = document.querySelector(".nav-links");
+
+        if (toggle && navLinks) {
+          toggle.addEventListener("click", () => {
+            navLinks.classList.toggle("show");
+          });
+        }
+      });
+    </script>
+  </body>
+</html>

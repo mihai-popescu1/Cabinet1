@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="ro">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Despre Laura Radu – Psihoterapeut</title>
+    <meta
+      name="description"
+      content="Despre psihoterapeutul Laura Radu – formare, stil de lucru și valori în psihoterapie."
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container">
+        <nav class="navbar">
+          <a href="index.html" class="logo">
+            <div class="logo-mark">LR</div>
+            <div>
+              <span class="logo-text-main">Laura Radu</span>
+              <span class="logo-text-sub">Psihoterapeut & psiholog clinician</span>
+            </div>
+          </a>
+
+          <button class="nav-toggle" aria-label="Deschide meniul">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+
+          <ul class="nav-links">
+            <li><a href="despre.html">Despre</a></li>
+            <li><a href="servicii.html">Servicii</a></li>
+            <li><a href="resurse.html">Resurse</a></li>
+            <li><a href="contact.html" class="btn">Programează o ședință</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="page-hero">
+        <div class="container">
+          <div class="breadcrumb">
+            <a href="index.html">Acasă</a> <span> / </span> Despre mine
+          </div>
+          <h1 class="page-title">Despre Laura Radu</h1>
+          <p class="page-intro">
+            Cred în psihoterapie ca într-un spațiu viu, contemporan, în care ne putem
+            uita cu onestitate la noi, fără judecată, în ritmul fiecăruia.
+          </p>
+
+          <div class="about-layout">
+            <div class="about-text">
+              <p>
+                Sunt <strong>psiholog clinician</strong> și
+                <strong>psihoterapeut</strong>, cu formare în psihoterapie integrativă
+                și experiență de lucru cu adulți aflați în momente de tranziție:
+                schimbări de carieră, burnout, despărțiri, pierderi și redefiniri de
+                identitate.
+              </p>
+              <p>
+                În cabinet, folosesc o abordare integrativă: combin elemente
+                <em>psihodinamice</em>, <em>experiențiale</em> și
+                <em>centrate pe emoții</em>, adaptate nevoilor și ritmului tău. Nu
+                cred în „rețete rapide”, dar cred în pași mici, constanți, care în timp
+                schimbă felul în care ne raportăm la noi și la ceilalți.
+              </p>
+              <p>
+                Stilul meu de lucru este <strong>calm, ancorat și colaborativ</strong>.
+                Îmi doresc să simți că ai alături un profesionist care te însoțește,
+                nu te judecă, și care te ajută să pui în cuvinte ceea ce poate până
+                acum era doar o senzație vagă sau un nod în piept.
+              </p>
+
+              <div class="about-highlight">
+                <strong>Câteva principii importante pentru mine:</strong>
+                <ul style="margin-top: 0.4rem; padding-left: 1.1rem">
+                  <li>nu ești „prea mult” și nu ești „defect”;</li>
+                  <li>emoțiile tale au întotdeauna un sens, chiar când sunt greu de purtat;</li>
+                  <li>nu trebuie să știi „ce să spui” – e suficient să fii aici.</li>
+                </ul>
+              </div>
+
+              <div class="about-meta">
+                <strong>Formare & experiență (exemplu, de personalizat):</strong>
+                <br />
+                • Licență în Psihologie – Universitatea din București<br />
+                • Master în Psihologie Clinică și Psihoterapie<br />
+                • Formare în psihoterapie integrativă<br />
+                • Experiență în clinici private & proiecte de sănătate mintală în
+                organizații
+              </div>
+            </div>
+
+            <aside class="about-photo-card">
+              <div class="about-photo">
+                <!-- Poți înlocui cu o fotografie profesională -->
+                <img
+                  src="https://images.pexels.com/photos/1181513/pexels-photo-1181513.jpeg"
+                  alt="Portret psiholog"
+                />
+              </div>
+              <div class="about-badges">
+                <span>#psihoterapie integrativă</span>
+                <span>#anxietate</span>
+                <span>#burnout</span>
+                <span>#relații</span>
+              </div>
+            </aside>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-layout">
+        <div>© <span id="year"></span> Laura Radu – Cabinet de psihoterapie</div>
+        <div>
+          <a href="contact.html">Contact</a> ·
+          <a href="resurse.html">Resurse</a>
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      document.getElementById("year").textContent = new Date().getFullYear();
+      document.addEventListener("DOMContentLoaded", function () {
+        const toggle = document.querySelector(".nav-toggle");
+        const navLinks = document.querySelector(".nav-links");
+        if (toggle && navLinks) {
+          toggle.addEventListener("click", () => navLinks.classList.toggle("show"));
+        }
+      });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="ro">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Contact & programări – Laura Radu</title>
+    <meta
+      name="description"
+      content="Contactează psihoterapeutul Laura Radu pentru programări la cabinet sau online."
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container">
+        <nav class="navbar">
+          <a href="index.html" class="logo">
+            <div class="logo-mark">LR</div>
+            <div>
+              <span class="logo-text-main">Laura Radu</span>
+              <span class="logo-text-sub">Psihoterapeut & psiholog clinician</span>
+            </div>
+          </a>
+
+          <button class="nav-toggle" aria-label="Deschide meniul">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+
+          <ul class="nav-links">
+            <li><a href="despre.html">Despre</a></li>
+            <li><a href="servicii.html">Servicii</a></li>
+            <li><a href="resurse.html">Resurse</a></li>
+            <li><a href="contact.html" class="btn">Programează o ședință</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="page-hero">
+        <div class="container">
+          <div class="breadcrumb">
+            <a href="index.html">Acasă</a> <span> / </span> Contact
+          </div>
+          <h1 class="page-title">Contact & programări</h1>
+          <p class="page-intro">
+            Poți trimite un mesaj folosind formularul de mai jos. Îți voi răspunde în
+            cel mai scurt timp posibil pentru a stabili împreună detaliile primei
+            ședințe.
+          </p>
+
+          <div class="contact-layout">
+            <section class="card contact-card">
+              <h2 class="card-title">Trimite un mesaj</h2>
+              <form action="#" method="post">
+                <div class="form-group">
+                  <label for="name">Nume și prenume</label>
+                  <input
+                    type="text"
+                    id="name"
+                    name="name"
+                    placeholder="Ex: Andreea Popescu"
+                    required
+                  />
+                </div>
+
+                <div class="form-group">
+                  <label for="email">Adresă de e-mail</label>
+                  <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    placeholder="exemplu@email.com"
+                    required
+                  />
+                </div>
+
+                <div class="form-group">
+                  <label for="type">Tip de ședință</label>
+                  <select id="type" name="type">
+                    <option value="individuala">Psihoterapie individuală</option>
+                    <option value="cuplu">Psihoterapie de cuplu</option>
+                    <option value="online">Ședință online</option>
+                    <option value="nedecis">Nu sunt sigur(ă) încă</option>
+                  </select>
+                </div>
+
+                <div class="form-group">
+                  <label for="message">Mesaj</label>
+                  <textarea
+                    id="message"
+                    name="message"
+                    rows="4"
+                    placeholder="Spune-mi câteva cuvinte despre ceea ce te aduce în terapie sau ce ai nevoie în acest moment."
+                  ></textarea>
+                  <p class="form-helper">
+                    Nu este nevoie să intri în foarte multe detalii acum. Putem explora
+                    mai multe împreună, în ședință.
+                  </p>
+                </div>
+
+                <button type="submit" class="btn">Trimite mesajul</button>
+              </form>
+            </section>
+
+            <aside class="card contact-card">
+              <h2 class="card-title">Date de contact</h2>
+              <div class="contact-info">
+                <p><strong>E-mail:</strong> laura.radu@exemplu.ro</p>
+                <p><strong>Telefon:</strong> 07xx xxx xxx</p>
+                <p><strong>Format:</strong> ședințe la cabinet & online</p>
+
+                <p style="margin-top: 1rem">
+                  <strong>Cabinet (exemplu):</strong><br />
+                  Str. Exemplu nr. 10, București<br />
+                  Zona Piața Romană
+                </p>
+
+                <p style="margin-top: 1rem">
+                  Programul este flexibil și se stabilește de comun acord. În general,
+                  există disponibilitate și în a doua parte a zilei.
+                </p>
+              </div>
+
+              <div class="contact-badges">
+                <span class="contact-badge">Confidențialitate 100%</span>
+                <span class="contact-badge">Spațiu sigur & fără judecată</span>
+                <span class="contact-badge">Online & la cabinet</span>
+              </div>
+
+              <div style="margin-top: 1.2rem; font-size: 0.8rem; color: #9ca3af">
+                * Dacă te confrunți cu o criză acută sau cu gânduri de auto-vătămare,
+                te rog să contactezi serviciile de urgență sau un serviciu de criză
+                specializat. Terapia nu este un serviciu de urgență.
+              </div>
+            </aside>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-layout">
+        <div>© <span id="year"></span> Laura Radu – Cabinet de psihoterapie</div>
+        <div>
+          <a href="contact.html">Contact</a> ·
+          <a href="resurse.html">Resurse</a>
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      document.getElementById("year").textContent = new Date().getFullYear();
+      document.addEventListener("DOMContentLoaded", function () {
+        const toggle = document.querySelector(".nav-toggle");
+        const navLinks = document.querySelector(".nav-links");
+        if (toggle && navLinks) {
+          toggle.addEventListener("click", () => navLinks.classList.toggle("show"));
+        }
+      });
+    </script>
+  </body>
+</html>

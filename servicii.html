@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="ro">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Servicii de psihoterapie – Laura Radu</title>
+    <meta
+      name="description"
+      content="Servicii de psihoterapie oferite de Laura Radu: terapie individuală, de cuplu, online și consiliere pentru burnout & anxietate."
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container">
+        <nav class="navbar">
+          <a href="index.html" class="logo">
+            <div class="logo-mark">LR</div>
+            <div>
+              <span class="logo-text-main">Laura Radu</span>
+              <span class="logo-text-sub">Psihoterapeut & psiholog clinician</span>
+            </div>
+          </a>
+
+          <button class="nav-toggle" aria-label="Deschide meniul">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+
+          <ul class="nav-links">
+            <li><a href="despre.html">Despre</a></li>
+            <li><a href="servicii.html">Servicii</a></li>
+            <li><a href="resurse.html">Resurse</a></li>
+            <li><a href="contact.html" class="btn">Programează o ședință</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="page-hero">
+        <div class="container">
+          <div class="breadcrumb">
+            <a href="index.html">Acasă</a> <span> / </span> Servicii
+          </div>
+          <h1 class="page-title">Servicii de psihoterapie</h1>
+          <p class="page-intro">
+            Toate ședințele se desfășoară într-un cadru confidențial, cu respect pentru
+            ritmul și nevoile tale. Lucrăm împreună, nu ești singur(ă) în proces.
+          </p>
+
+          <div class="services-list">
+            <article class="card service-card">
+              <div class="service-card-header">
+                <h2 class="card-title">Psihoterapie individuală adulți</h2>
+                <span class="service-price">50–60 min · tarif orientativ</span>
+              </div>
+              <p class="card-body">
+                Spațiu în care poți explora anxietatea, burnout-ul, dificultățile în
+                relații, perfecționismul, rușinea sau pierderile emoționale. Ne uităm
+                atât la prezent, cât și la istoricul tău de viață.
+              </p>
+              <p class="service-meta">
+                Potrivită dacă simți că „e prea mult”, ai un nod în gât sau în stomac
+                de prea mult timp sau pur și simplu vrei să te cunoști mai bine.
+              </p>
+            </article>
+
+            <article class="card service-card">
+              <div class="service-card-header">
+                <h2 class="card-title">Psihoterapie de cuplu</h2>
+                <span class="service-price">75–90 min · tarif orientativ</span>
+              </div>
+              <p class="card-body">
+                Lucrăm cu dinamica de cuplu, conflicte care se repetă, dificultăți în
+                comunicare, trădări, separări și reconectare. Accent pe siguranță
+                emoțională și dialog autentic.
+              </p>
+              <p class="service-meta">
+                Recomandată cuplurilor care „nu mai știu cum să vorbească” fără
+                ceartă sau îngheț emoțional.
+              </p>
+            </article>
+
+            <article class="card service-card">
+              <div class="service-card-header">
+                <h2 class="card-title">Psihoterapie online</h2>
+                <span class="service-price">50–60 min</span>
+              </div>
+              <p class="card-body">
+                Ședințe video, prin platforme securizate, pentru persoane cu program
+                încărcat, care călătoresc des sau nu sunt în București. Aceleași
+                standarde de confidențialitate ca la cabinet.
+              </p>
+              <p class="service-meta">
+                Ideală dacă vrei continuitate în terapie, indiferent unde ești.
+              </p>
+            </article>
+
+            <article class="card service-card">
+              <div class="service-card-header">
+                <h2 class="card-title">Consiliere pentru burnout & muncă</h2>
+                <span class="service-price">50–60 min</span>
+              </div>
+              <p class="card-body">
+                Focus pe relația cu munca, limite, perfecționism, dinamici de
+                supra-responsabilizare și dificultatea de a spune „nu”.
+              </p>
+              <p class="service-meta">
+                Potrivită pentru profesioniști care simt că „nu mai pot”, dar nu își
+                permit să se oprească.
+              </p>
+            </article>
+          </div>
+
+          <div style="margin-top: 2rem; font-size: 0.8rem; color: #9ca3af">
+            * Detaliile legate de tarife și disponibilitate se discută la
+            <a href="contact.html" style="color: #a5b4fc; text-decoration: none"
+              >primul contact</a
+            >.
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-layout">
+        <div>© <span id="year"></span> Laura Radu – Cabinet de psihoterapie</div>
+        <div>
+          <a href="contact.html">Contact</a> ·
+          <a href="resurse.html">Resurse</a>
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      document.getElementById("year").textContent = new Date().getFullYear();
+      document.addEventListener("DOMContentLoaded", function () {
+        const toggle = document.querySelector(".nav-toggle");
+        const navLinks = document.querySelector(".nav-links");
+        if (toggle && navLinks) {
+          toggle.addEventListener("click", () => navLinks.classList.toggle("show"));
+        }
+      });
+    </script>
+  </body>
+</html>

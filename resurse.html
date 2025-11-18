@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="ro">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Resurse & articole – Laura Radu</title>
+    <meta
+      name="description"
+      content="Resurse și articole despre anxietate, burnout, relații și sănătate emoțională, scrise de psihoterapeutul Laura Radu."
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container">
+        <nav class="navbar">
+          <a href="index.html" class="logo">
+            <div class="logo-mark">LR</div>
+            <div>
+              <span class="logo-text-main">Laura Radu</span>
+              <span class="logo-text-sub">Psihoterapeut & psiholog clinician</span>
+            </div>
+          </a>
+
+          <button class="nav-toggle" aria-label="Deschide meniul">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+
+          <ul class="nav-links">
+            <li><a href="despre.html">Despre</a></li>
+            <li><a href="servicii.html">Servicii</a></li>
+            <li><a href="resurse.html">Resurse</a></li>
+            <li><a href="contact.html" class="btn">Programează o ședință</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="page-hero">
+        <div class="container">
+          <div class="breadcrumb">
+            <a href="index.html">Acasă</a> <span> / </span> Resurse
+          </div>
+          <h1 class="page-title">Resurse & articole</h1>
+          <p class="page-intro">
+            Gânduri, idei și explicații despre psihoterapie, emoții și viața de zi cu
+            zi. Nu înlocuiesc terapia, dar pot fi un punct de pornire.
+          </p>
+
+          <div class="resources-grid">
+            <article class="card resource-card">
+              <p class="resource-meta">Anxietate · Lectură scurtă</p>
+              <h2 class="card-title">
+                Cum arată anxietatea când nu arată „ca în filme”
+              </h2>
+              <p class="card-body">
+                Uneori anxietatea nu înseamnă atacuri de panică, ci oboseală, amânare,
+                perfecționism sau nevoia de a controla totul...
+              </p>
+            </article>
+
+            <article class="card resource-card">
+              <p class="resource-meta">Burnout · Pentru profesioniști</p>
+              <h2 class="card-title">Când munca devine totul – și totuși nu e de ajuns</h2>
+              <p class="card-body">
+                Despre cum ajungem să ne definim prin rezultate, KPI-uri și proiecte –
+                și ce se întâmplă cu noi când corpul apasă frâna.
+              </p>
+            </article>
+
+            <article class="card resource-card">
+              <p class="resource-meta">Relații · Dinamică</p>
+              <h2 class="card-title">
+                De ce repetăm aceleași tipare în relații, chiar dacă „știm mai bine”
+              </h2>
+              <p class="card-body">
+                Intelectual știm exact ce ne-ar face bine, dar emoțional ne întoarcem
+                în același loc familiar. De ce?
+              </p>
+            </article>
+
+            <article class="card resource-card">
+              <p class="resource-meta">Terapie · Practic</p>
+              <h2 class="card-title">Cum știi dacă ai „nevoie” de terapie</h2>
+              <p class="card-body">
+                Nu există un prag oficial. Există însă semne subtile că ai dus singur
+                suficient de mult...
+              </p>
+            </article>
+
+            <article class="card resource-card">
+              <p class="resource-meta">Emoții · Învățare</p>
+              <h2 class="card-title">Să te obișnuiești să nu mai fugi de ceea ce simți</h2>
+              <p class="card-body">
+                Emoțiile incomode nu dispar dacă le ignorăm, ci tind să vorbească mai
+                tare. Ce înseamnă să le asculți în siguranță?
+              </p>
+            </article>
+          </div>
+
+          <div style="margin-top: 2rem; font-size: 0.85rem; color: #9ca3af">
+            Aceste texte sunt materiale informative și nu înlocuiesc o evaluare
+            psihologică sau un proces terapeutic personalizat.
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-layout">
+        <div>© <span id="year"></span> Laura Radu – Cabinet de psihoterapie</div>
+        <div>
+          <a href="contact.html">Contact</a> ·
+          <a href="resurse.html">Resurse</a>
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      document.getElementById("year").textContent = new Date().getFullYear();
+      document.addEventListener("DOMContentLoaded", function () {
+        const toggle = document.querySelector(".nav-toggle");
+        const navLinks = document.querySelector(".nav-links");
+        if (toggle && navLinks) {
+          toggle.addEventListener("click", () => navLinks.classList.toggle("show"));
+        }
+      });
+    </script>
+  </body>
+</html>
